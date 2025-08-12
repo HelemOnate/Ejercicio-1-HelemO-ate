@@ -1,0 +1,438 @@
+<!doctype html> <!-- L1: Declaración del tipo de documento HTML5 -->
+<html lang="es"> <!-- L2: Raíz del documento con idioma español -->
+<head> <!-- L3: Cabecera del documento (metadatos y enlaces) -->
+  <!-- L4–L10: Comentario descriptivo del archivo y propósito pedagógico -->
+  <meta charset="utf-8" /> <!-- L11: Codificación de caracteres en UTF-8 -->
+  <meta name="viewport" content="width=device-width, initial-scale=1" /> <!-- L12: Ajuste responsive en móviles -->
+  <title>Ejemplos HTML básicos: 10 estructuras + 10 etiquetas</title> <!-- L13: Título de la pestaña del navegador -->
+  <link rel="stylesheet" href="styles.css" /> <!-- L14: Enlace a la hoja de estilos principal -->
+</head> <!-- L15: Cierre de cabecera -->
+<body> <!-- L16: Inicio del cuerpo visible de la página -->
+  <!-- L17: Comentario: cabecera del sitio -->
+  <header class="site-header"> <!-- L18: Encabezado global con estilo propio -->
+    <div class="container bar"> <!-- L19: Contenedor centrado y barra flexible -->
+      <div class="brand">🌈 Ejemplos HTML</div> <!-- L20: Marca o logo del sitio -->
+      <nav class="top-nav"> <!-- L21: Navegación principal -->
+        <a href="#estructuras">Estructuras</a> <!-- L22: Enlace a la sección de estructuras -->
+        <a href="#etiquetas">Etiquetas</a> <!-- L23: Enlace a la sección de etiquetas -->
+      </nav> <!-- L24: Fin de la navegación -->
+    </div> <!-- L25: Fin del contenedor de la barra -->
+  </header> <!-- L26: Fin de la cabecera del sitio -->
+
+  <div class="container"> <!-- L28: Contenedor principal del contenido -->
+  <!-- L29: Comentario: título principal y texto introductorio -->
+  <h1>Ejemplos HTML: 10 estructuras y 10 etiquetas (básico y documentado)</h1> <!-- L30: Título H1 de la página -->
+  <p> <!-- L31: Inicio del párrafo introductorio -->
+    Abajo verás ejemplos sencillos. Cada ejemplo incluye una vista previa y el código fuente correspondiente
+    para que puedas copiarlo y reutilizarlo.
+  </p> <!-- L34: Fin del párrafo introductorio -->
+
+  <!-- ===================================================== --> <!-- L36: Separador visual por comentario -->
+  <!-- ================== SECCIÓN: ESTRUCTURAS ============= --> <!-- L37: Título de bloque por comentario -->
+  <!-- ===================================================== --> <!-- L38: Separador visual por comentario -->
+  <h2 id="estructuras">Estructuras (10)</h2> <!-- L39: Encabezado H2 y ancla de navegación -->
+
+  <!-- 1) Documento HTML5 mínimo --> <!-- L41: Nombre del ejemplo 1 -->
+  <h3>1) Documento HTML5 mínimo</h3> <!-- L42: Subtítulo del ejemplo -->
+  <!-- Vista previa: solo texto simple --> <!-- L43: Indica que la siguiente caja es una demo -->
+  <div>Hola mundo</div> <!-- L44: Vista previa del ejemplo 1 -->
+  <!-- Código del ejemplo (escapado con &lt; y &gt; para mostrarse en la página) --> <!-- L45: Anuncio de bloque de código -->
+  <pre><code>&lt;!doctype html&gt; <!-- L46: Inicio del bloque de código (no modificar contenido interno) -->
+&lt;html lang="es"&gt;
+&lt;head&gt;
+  &lt;meta charset="utf-8" /&gt;
+  &lt;meta name="viewport" content="width=device-width, initial-scale=1" /&gt;
+  &lt;title&gt;Mi sitio&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  Hola mundo
+&lt;/body&gt;
+&lt;/html&gt;</code></pre> <!-- L56: Fin del bloque de código del ejemplo 1 -->
+
+  <!-- 2) Header + Nav + Main + Footer --> <!-- L58: Nombre del ejemplo 2 -->
+  <h3>2) Header + Nav + Main + Footer</h3> <!-- L59: Subtítulo del ejemplo -->
+  <!-- Vista previa: estructura típica de una página web --> <!-- L60: Indicación de preview -->
+  <div> <!-- L61: Contenedor de la vista previa -->
+    <header> <!-- L62: Encabezado de la página de ejemplo -->
+      <h4>Mi Sitio</h4> <!-- L63: Título pequeño dentro del header de ejemplo -->
+      <nav> <!-- L64: Menú de navegación del ejemplo -->
+        <ul> <!-- L65: Lista de enlaces -->
+          <li><a href="#inicio">Inicio</a></li> <!-- L66: Enlace a #inicio -->
+          <li><a href="#acerca">Acerca</a></li> <!-- L67: Enlace a #acerca -->
+          <li><a href="#contacto">Contacto</a></li> <!-- L68: Enlace a #contacto -->
+        </ul> <!-- L70: Fin de la lista de navegación -->
+      </nav> <!-- L71: Fin del nav del ejemplo -->
+    </header> <!-- L72: Fin del header del ejemplo -->
+    <main> <!-- L73: Contenido principal del ejemplo -->
+      <h5>Bienvenido</h5> <!-- L74: Encabezado dentro de main -->
+      <p>Contenido principal.</p> <!-- L75: Texto del contenido -->
+    </main> <!-- L76: Fin de main del ejemplo -->
+    <footer> <!-- L77: Pie de página del ejemplo -->
+      <small>© 2025 Mi Sitio</small> <!-- L78: Texto legal del pie -->
+    </footer> <!-- L79: Fin del footer del ejemplo -->
+  </div> <!-- L80: Fin del contenedor de vista previa -->
+  <pre><code>&lt;header&gt; <!-- L81: Inicio del código del ejemplo 2 (no modificar) -->
+  &lt;h1&gt;Mi Sitio&lt;/h1&gt;
+  &lt;nav&gt;
+    &lt;ul&gt;
+      &lt;li&gt;&lt;a href="#inicio"&gt;Inicio&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href="#acerca"&gt;Acerca&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href="#contacto"&gt;Contacto&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/nav&gt;
+&lt;/header&gt;
+&lt;main id="inicio"&gt;
+  &lt;h2&gt;Bienvenido&lt;/h2&gt;
+  &lt;p&gt;Contenido principal.&lt;/p&gt;
+&lt;/main&gt;
+&lt;footer&gt;
+  &lt;small&gt;© 2025 Mi Sitio&lt;/small&gt;
+&lt;/footer&gt;</code></pre> <!-- L96: Fin del código del ejemplo 2 -->
+
+  <!-- 3) Layout con main + aside (dos columnas semánticas) --> <!-- L98: Nombre del ejemplo 3 -->
+  <h3>3) Layout con main + aside</h3> <!-- L99: Subtítulo del ejemplo -->
+  <div> <!-- L100: Contenedor de la vista previa del ejemplo 3 -->
+    <main> <!-- L101: Columna principal semántica -->
+      <article> <!-- L102: Artículo dentro de main -->
+        <h4>Artículo</h4> <!-- L103: Título del artículo -->
+        <p>Texto del artículo.</p> <!-- L104: Párrafo del artículo -->
+      </article> <!-- L105: Fin del artículo -->
+    </main> <!-- L106: Fin de main -->
+    <aside> <!-- L107: Barra lateral con contenido adicional -->
+      <h5>Sidebar</h5> <!-- L108: Título de la barra lateral -->
+      <p>Enlaces y extras.</p> <!-- L109: Contenido de la barra lateral -->
+    </aside> <!-- L110: Fin del aside -->
+  </div> <!-- L111: Fin del contenedor de vista previa -->
+  <pre><code>&lt;main&gt; <!-- L112: Inicio del código del ejemplo 3 (no modificar) -->
+  &lt;article&gt;
+    &lt;h2&gt;Artículo&lt;/h2&gt;
+    &lt;p&gt;Texto del artículo.&lt;/p&gt;
+  &lt;/article&gt;
+&lt;/main&gt;
+&lt;aside&gt;
+  &lt;h3&gt;Sidebar&lt;/h3&gt;
+  &lt;p&gt;Enlaces y extras.&lt;/p&gt;
+&lt;/aside&gt;</code></pre> <!-- L121: Fin del código del ejemplo 3 -->
+
+  <!-- 4) Página con secciones temáticas --> <!-- L123: Nombre del ejemplo 4 -->
+  <h3>4) Página con secciones temáticas</h3> <!-- L124: Subtítulo del ejemplo -->
+  <div> <!-- L125: Contenedor de la vista previa del ejemplo 4 -->
+    <section id="servicios"> <!-- L126: Sección temática de servicios con ID -->
+      <h4>Servicios</h4> <!-- L127: Título de la sección servicios -->
+      <p>Descripción breve.</p> <!-- L128: Texto de la sección servicios -->
+    </section> <!-- L129: Fin de sección servicios -->
+    <section id="portafolio"> <!-- L130: Sección temática de portafolio con ID -->
+      <h4>Portafolio</h4> <!-- L131: Título de la sección portafolio -->
+      <p>Proyectos destacados.</p> <!-- L132: Texto de la sección portafolio -->
+    </section> <!-- L133: Fin de sección portafolio -->
+  </div> <!-- L134: Fin del contenedor de vista previa -->
+  <pre><code>&lt;section id="servicios"&gt; <!-- L135: Inicio del código del ejemplo 4 (no modificar) -->
+  &lt;h2&gt;Servicios&lt;/h2&gt;
+  &lt;p&gt;Descripción breve.&lt;/p&gt;
+&lt;/section&gt;
+&lt;section id="portafolio"&gt;
+  &lt;h2&gt;Portafolio&lt;/h2&gt;
+  &lt;p&gt;Proyectos destacados.&lt;/p&gt;
+&lt;/section&gt;</code></pre> <!-- L142: Fin del código del ejemplo 4 -->
+
+  <!-- 5) Artículo de blog completo --> <!-- L144: Nombre del ejemplo 5 -->
+  <h3>5) Artículo de blog completo</h3> <!-- L145: Subtítulo del ejemplo -->
+  <div> <!-- L146: Contenedor de la vista previa del ejemplo 5 -->
+    <article> <!-- L147: Artículo que representa un post de blog -->
+      <header> <!-- L148: Cabecera del artículo -->
+        <h4>Título del post</h4> <!-- L149: Título del post -->
+        <p>Por <strong>Ana</strong> — <time datetime="2025-08-12">12 Ago 2025</time></p> <!-- L150–L151: Autor y fecha -->
+      </header> <!-- L152: Fin de cabecera del artículo -->
+      <p>Introducción del post...</p> <!-- L153: Párrafo de introducción -->
+      <p>Contenido principal...</p> <!-- L154: Párrafo de contenido principal -->
+      <footer> <!-- L155: Pie del artículo -->
+        <a href="#comentarios">3 comentarios</a> <!-- L156: Enlace a comentarios -->
+      </footer> <!-- L157: Fin del pie del artículo -->
+    </article> <!-- L158: Fin del artículo de blog -->
+  </div> <!-- L159: Fin del contenedor de vista previa -->
+  <pre><code>&lt;article&gt; <!-- L160: Inicio del código del ejemplo 5 (no modificar) -->
+  &lt;header&gt;
+    &lt;h2&gt;Título del post&lt;/h2&gt;
+    &lt;p&gt;Por &lt;strong&gt;Ana&lt;/strong&gt; — &lt;time datetime="2025-08-12"&gt;12 Ago 2025&lt;/time&gt;&lt;/p&gt;
+  &lt;/header&gt;
+  &lt;p&gt;Introducción del post...&lt;/p&gt;
+  &lt;p&gt;Contenido principal...&lt;/p&gt;
+  &lt;footer&gt;
+    &lt;a href="#comentarios"&gt;3 comentarios&lt;/a&gt;
+  &lt;/footer&gt;
+&lt;/article&gt;</code></pre> <!-- L169: Fin del código del ejemplo 5 -->
+
+  <!-- 6) Tarjeta con imagen (figure) --> <!-- L171: Nombre del ejemplo 6 -->
+  <h3>6) Tarjeta con imagen (figure)</h3> <!-- L172: Subtítulo del ejemplo -->
+  <div> <!-- L173: Contenedor de la vista previa del ejemplo 6 -->
+    <article> <!-- L174: Tarjeta con figure e información -->
+      <figure> <!-- L175: Agrupa imagen y pie de foto -->
+        <img src="https://placehold.co/600x200" alt="Paisaje al atardecer" /> <!-- L176: Imagen de ejemplo con texto alternativo -->
+        <figcaption>Paisaje al atardecer</figcaption> <!-- L177: Pie de foto -->
+      </figure> <!-- L178: Fin de figure -->
+      <h4>Destino soñado</h4> <!-- L179: Título de la tarjeta -->
+      <p>Una breve descripción.</p> <!-- L180: Descripción de la tarjeta -->
+      <a href="#">Leer más</a> <!-- L181: Enlace de acción -->
+    </article> <!-- L182: Fin de la tarjeta -->
+  </div> <!-- L183: Fin del contenedor de vista previa -->
+  <pre><code>&lt;article class="card"&gt; <!-- L184: Inicio del código del ejemplo 6 (no modificar) -->
+  &lt;figure&gt;
+    &lt;img src="foto.jpg" alt="Paisaje al atardecer" /&gt;
+    &lt;figcaption&gt;Paisaje al atardecer&lt;/figcaption&gt;
+  &lt;/figure&gt;
+  &lt;h3&gt;Destino soñado&lt;/h3&gt;
+  &lt;p&gt;Una breve descripción.&lt;/p&gt;
+  &lt;a href="#"&gt;Leer más&lt;/a&gt;
+&lt;/article&gt;</code></pre> <!-- L192: Fin del código del ejemplo 6 -->
+
+  <!-- 7) Hero/portada --> <!-- L194: Nombre del ejemplo 7 -->
+  <h3>7) Hero / portada</h3> <!-- L195: Subtítulo del ejemplo -->
+  <div> <!-- L196: Contenedor de la vista previa del ejemplo 7 -->
+    <header> <!-- L197: Hero principal con título, texto y botón -->
+      <h2>Construye algo increíble</h2> <!-- L198: Título del hero -->
+      <p>Front‑end simple, moderno y accesible.</p> <!-- L199: Subtítulo del hero -->
+      <button type="button">Comenzar</button> <!-- L200: Botón de llamada a la acción -->
+    </header> <!-- L201: Fin del hero -->
+  </div> <!-- L202: Fin del contenedor de vista previa -->
+  <pre><code>&lt;header class="hero"&gt; <!-- L203: Inicio del código del ejemplo 7 (no modificar) -->
+  &lt;h1&gt;Construye algo increíble&lt;/h1&gt;
+  &lt;p&gt;Front-end simple, moderno y accesible.&lt;/p&gt;
+  &lt;button&gt;Comenzar&lt;/button&gt;
+&lt;/header&gt;</code></pre> <!-- L207: Fin del código del ejemplo 7 -->
+
+  <!-- 8) Galería de imágenes --> <!-- L209: Nombre del ejemplo 8 -->
+  <h3>8) Galería de imágenes</h3> <!-- L210: Subtítulo del ejemplo -->
+  <div> <!-- L211: Contenedor de la vista previa del ejemplo 8 -->
+    <section aria-label="Galería"> <!-- L212: Sección con etiqueta accesible -->
+      <ul> <!-- L213: Lista de elementos de la galería sin orden -->
+        <li> <!-- L214: Ítem 1 de la galería -->
+          <figure> <!-- L215: Contenedor imagen + pie -->
+            <img src="https://placehold.co/300x180" alt="Foto 1" /> <!-- L216: Imagen 1 con alt -->
+            <figcaption>Foto 1</figcaption> <!-- L217: Pie de la imagen 1 -->
+          </figure> <!-- L218: Fin figure 1 -->
+        </li> <!-- L219: Fin ítem 1 -->
+        <li> <!-- L220: Ítem 2 de la galería -->
+          <figure> <!-- L221: Contenedor imagen + pie -->
+            <img src="https://placehold.co/300x180" alt="Foto 2" /> <!-- L222: Imagen 2 con alt -->
+            <figcaption>Foto 2</figcaption> <!-- L223: Pie de la imagen 2 -->
+          </figure> <!-- L224: Fin figure 2 -->
+        </li> <!-- L225: Fin ítem 2 -->
+        <li> <!-- L226: Ítem 3 de la galería -->
+          <figure> <!-- L227: Contenedor imagen + pie -->
+            <img src="https://placehold.co/300x180" alt="Foto 3" /> <!-- L228: Imagen 3 con alt -->
+            <figcaption>Foto 3</figcaption> <!-- L229: Pie de la imagen 3 -->
+          </figure> <!-- L230: Fin figure 3 -->
+        </li> <!-- L231: Fin ítem 3 -->
+      </ul> <!-- L232: Fin de la lista de galería -->
+    </section> <!-- L233: Fin de la sección de galería -->
+  </div> <!-- L234: Fin del contenedor de vista previa -->
+  <pre><code>&lt;section aria-label="Galería"&gt; <!-- L235: Inicio del código del ejemplo 8 (no modificar) -->
+  &lt;ul&gt;
+    &lt;li&gt;
+      &lt;figure&gt;
+        &lt;img src="1.jpg" alt="Foto 1" /&gt;
+        &lt;figcaption&gt;Foto 1&lt;/figcaption&gt;
+      &lt;/figure&gt;
+    &lt;/li&gt;
+    &lt;li&gt;...&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/section&gt;</code></pre> <!-- L245: Fin del código del ejemplo 8 -->
+
+  <!-- 9) Grid simple de tarjetas --> <!-- L247: Nombre del ejemplo 9 -->
+  <h3>9) Grid simple de tarjetas</h3> <!-- L248: Subtítulo del ejemplo -->
+  <div> <!-- L249: Contenedor de la vista previa del ejemplo 9 -->
+    <section> <!-- L250: Sección que agrupa las tarjetas -->
+      <article><h4>Card 1</h4><p>Detalle.</p></article> <!-- L251: Tarjeta 1 con título y descripción -->
+      <article><h4>Card 2</h4><p>Detalle.</p></article> <!-- L252: Tarjeta 2 con título y descripción -->
+      <article><h4>Card 3</h4><p>Detalle.</p></article> <!-- L253: Tarjeta 3 con título y descripción -->
+    </section> <!-- L254: Fin de la sección de tarjetas -->
+  </div> <!-- L255: Fin del contenedor de vista previa -->
+  <pre><code>&lt;section class="grid"&gt; <!-- L256: Inicio del código del ejemplo 9 (no modificar) -->
+  &lt;article&gt;&lt;h3&gt;Card 1&lt;/h3&gt;&lt;p&gt;Detalle.&lt;/p&gt;&lt;/article&gt;
+  &lt;article&gt;&lt;h3&gt;Card 2&lt;/h3&gt;&lt;p&gt;Detalle.&lt;/p&gt;&lt;/article&gt;
+  &lt;article&gt;&lt;h3&gt;Card 3&lt;/h3&gt;&lt;p&gt;Detalle.&lt;/p&gt;&lt;/article&gt;
+&lt;/section&gt;</code></pre> <!-- L260: Fin del código del ejemplo 9 -->
+
+  <!-- 10) Formulario de contacto --> <!-- L262: Nombre del ejemplo 10 -->
+  <h3>10) Formulario de contacto</h3> <!-- L263: Subtítulo del ejemplo -->
+  <div> <!-- L264: Contenedor de la vista previa del ejemplo 10 -->
+    <form> <!-- L265: Formulario de contacto de ejemplo -->
+      <label>Nombre <!-- L266: Etiqueta que agrupa el campo de nombre -->
+        <input type="text" name="nombre" placeholder="Tu nombre" required /> <!-- L267: Campo de texto obligatorio -->
+      </label> <!-- L268: Fin del campo de nombre -->
+      <label>Correo <!-- L269: Etiqueta que agrupa el campo de correo -->
+        <input type="email" name="email" placeholder="tu@correo.com" required /> <!-- L270: Campo email obligatorio -->
+      </label> <!-- L271: Fin del campo de correo -->
+      <label>Mensaje <!-- L272: Etiqueta que agrupa el campo de mensaje -->
+        <textarea name="mensaje" rows="3" placeholder="Cuéntame..."></textarea> <!-- L273: Área de texto para el mensaje -->
+      </label> <!-- L274: Fin del campo de mensaje -->
+      <button type="submit">Enviar</button> <!-- L275: Botón para enviar el formulario -->
+    </form> <!-- L276: Fin del formulario -->
+  </div> <!-- L277: Fin del contenedor de vista previa -->
+  <pre><code>&lt;section id="contacto"&gt; <!-- L278: Inicio del código del ejemplo 10 (no modificar) -->
+  &lt;h2&gt;Contacto&lt;/h2&gt;
+  &lt;form&gt;
+    &lt;label&gt;Nombre &lt;input type="text" name="nombre" required /&gt;&lt;/label&gt;
+    &lt;label&gt;Correo &lt;input type="email" name="email" required /&gt;&lt;/label&gt;
+    &lt;label&gt;Mensaje &lt;textarea name="mensaje" rows="4"&gt;&lt;/textarea&gt;&lt;/label&gt;
+    &lt;button type="submit"&gt;Enviar&lt;/button&gt;
+  &lt;/form&gt;
+&lt;/section&gt;</code></pre> <!-- L286: Fin del código del ejemplo 10 -->
+
+  <!-- ===================================================== --> <!-- L288: Separador visual por comentario -->
+  <!-- =================== SECCIÓN: ETIQUETAS ============== --> <!-- L289: Inicio de la sección etiquetas -->
+  <!-- ===================================================== --> <!-- L290: Separador visual por comentario -->
+  <h2 id="etiquetas">Etiquetas básicas (10)</h2> <!-- L291: Encabezado H2 y ancla para etiquetas -->
+
+  <!-- 1) Títulos h1–h6 --> <!-- L293: Nombre del ejemplo de etiquetas 1 -->
+  <h3>1) Títulos h1–h6</h3> <!-- L294: Subtítulo del ejemplo -->
+  <div> <!-- L295: Contenedor de vista previa -->
+    <h1>Título 1</h1> <!-- L296: Título H1 de muestra -->
+    <h2>Título 2</h2> <!-- L297: Título H2 de muestra -->
+    <h3>Título 3</h3> <!-- L298: Título H3 de muestra -->
+  </div> <!-- L299: Fin del contenedor de vista previa -->
+  <pre><code>&lt;h1&gt;Título 1&lt;/h1&gt; <!-- L300: Inicio código del ejemplo etiquetas 1 (no modificar) -->
+&lt;h2&gt;Título 2&lt;/h2&gt;
+&lt;h3&gt;Título 3&lt;/h3&gt;</code></pre> <!-- L302: Fin del código del ejemplo etiquetas 1 -->
+
+  <!-- 2) Párrafo p --> <!-- L304: Nombre del ejemplo de etiquetas 2 -->
+  <h3>2) Párrafo (p)</h3> <!-- L305: Subtítulo del ejemplo -->
+  <div> <!-- L306: Contenedor de vista previa -->
+    <p>Este es un párrafo con texto descriptivo.</p> <!-- L307: Párrafo de ejemplo -->
+  </div> <!-- L308: Fin del contenedor de vista previa -->
+  <pre><code>&lt;p&gt;Este es un párrafo con texto descriptivo.&lt;/p&gt;</code></pre> <!-- L309: Código del ejemplo etiquetas 2 -->
+
+  <!-- 3) Enlace a --> <!-- L311: Nombre del ejemplo de etiquetas 3 -->
+  <h3>3) Enlace (a)</h3> <!-- L312: Subtítulo del ejemplo -->
+  <div> <!-- L313: Contenedor de vista previa -->
+    <a href="https://ejemplo.com" target="_blank" rel="noopener noreferrer">Visitar ejemplo.com</a> <!-- L314: Enlace externo seguro -->
+  </div> <!-- L315: Fin del contenedor de vista previa -->
+  <pre><code>&lt;a href="https://ejemplo.com" target="_blank" rel="noopener noreferrer"&gt;Visitar&lt;/a&gt;</code></pre> <!-- L316: Código del ejemplo etiquetas 3 -->
+
+  <!-- 4) Imagen img --> <!-- L318: Nombre del ejemplo de etiquetas 4 -->
+  <h3>4) Imagen (img)</h3> <!-- L319: Subtítulo del ejemplo -->
+  <div> <!-- L320: Contenedor de vista previa -->
+    <img src="https://placehold.co/96x96" alt="Foto de perfil" width="96" height="96" /> <!-- L321: Imagen de ejemplo con medidas -->
+  </div> <!-- L322: Fin del contenedor de vista previa -->
+  <pre><code>&lt;img src="avatar.png" alt="Foto de perfil de Juan" width="96" height="96" /&gt;</code></pre> <!-- L323: Código del ejemplo etiquetas 4 -->
+
+  <!-- 5) Lista no ordenada ul + li --> <!-- L325: Nombre del ejemplo de etiquetas 5 -->
+  <h3>5) Lista no ordenada (ul + li)</h3> <!-- L326: Subtítulo del ejemplo -->
+  <div> <!-- L327: Contenedor de vista previa -->
+    <ul> <!-- L328: Lista con viñetas -->
+      <li>Manzana</li> <!-- L329: Ítem 1 -->
+      <li>Banana</li> <!-- L330: Ítem 2 -->
+      <li>Cereza</li> <!-- L331: Ítem 3 -->
+    </ul> <!-- L332: Fin de la lista -->
+  </div> <!-- L333: Fin del contenedor de vista previa -->
+  <pre><code>&lt;ul&gt; <!-- L334: Inicio del código del ejemplo etiquetas 5 (no modificar) -->
+  &lt;li&gt;Manzana&lt;/li&gt;
+  &lt;li&gt;Banana&lt;/li&gt;
+  &lt;li&gt;Cereza&lt;/li&gt;
+&lt;/ul&gt;</code></pre> <!-- L338: Fin del código del ejemplo etiquetas 5 -->
+
+  <!-- 6) Lista ordenada ol + li --> <!-- L340: Nombre del ejemplo de etiquetas 6 -->
+  <h3>6) Lista ordenada (ol + li)</h3> <!-- L341: Subtítulo del ejemplo -->
+  <div> <!-- L342: Contenedor de vista previa -->
+    <ol> <!-- L343: Lista numerada -->
+      <li>Paso uno</li> <!-- L344: Ítem 1 -->
+      <li>Paso dos</li> <!-- L345: Ítem 2 -->
+      <li>Paso tres</li> <!-- L346: Ítem 3 -->
+    </ol> <!-- L347: Fin de la lista numerada -->
+  </div> <!-- L348: Fin del contenedor de vista previa -->
+  <pre><code>&lt;ol&gt; <!-- L349: Inicio del código del ejemplo etiquetas 6 (no modificar) -->
+  &lt;li&gt;Paso uno&lt;/li&gt;
+  &lt;li&gt;Paso dos&lt;/li&gt;
+  &lt;li&gt;Paso tres&lt;/li&gt;
+&lt;/ol&gt;</code></pre> <!-- L353: Fin del código del ejemplo etiquetas 6 -->
+
+  <!-- 7) Tabla table --> <!-- L355: Nombre del ejemplo de etiquetas 7 -->
+  <h3>7) Tabla básica (table)</h3> <!-- L356: Subtítulo del ejemplo -->
+  <div> <!-- L357: Contenedor de vista previa -->
+    <table> <!-- L358: Tabla con encabezado y cuerpo -->
+      <thead> <!-- L359: Cabecera de la tabla -->
+        <tr><th>Nombre</th><th>Edad</th></tr> <!-- L360: Fila de títulos de columna -->
+      </thead> <!-- L361: Fin de thead -->
+      <tbody> <!-- L362: Cuerpo de la tabla -->
+        <tr><td>Ana</td><td>28</td></tr> <!-- L363: Fila 1 de datos -->
+        <tr><td>Luis</td><td>31</td></tr> <!-- L364: Fila 2 de datos -->
+      </tbody> <!-- L365: Fin de tbody -->
+    </table> <!-- L366: Fin de la tabla -->
+  </div> <!-- L367: Fin del contenedor de vista previa -->
+  <pre><code>&lt;table&gt; <!-- L368: Inicio del código del ejemplo etiquetas 7 (no modificar) -->
+  &lt;thead&gt;
+    &lt;tr&gt;&lt;th&gt;Nombre&lt;/th&gt;&lt;th&gt;Edad&lt;/th&gt;&lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;&lt;td&gt;Ana&lt;/td&gt;&lt;td&gt;28&lt;/td&gt;&lt;/tr&gt;
+    &lt;tr&gt;&lt;td&gt;Luis&lt;/td&gt;&lt;td&gt;31&lt;/td&gt;&lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;</code></pre> <!-- L376: Fin del código del ejemplo etiquetas 7 -->
+
+  <!-- 8) Formulario con label + input --> <!-- L378: Nombre del ejemplo de etiquetas 8 -->
+  <h3>8) Formulario (form + label + input)</h3> <!-- L379: Subtítulo del ejemplo -->
+  <div> <!-- L380: Contenedor de vista previa -->
+    <form> <!-- L381: Formulario simple con etiqueta y campo -->
+      <label for="email">Correo</label> <!-- L382: Etiqueta asociada al input por id -->
+      <input id="email" name="email" type="email" placeholder="tu@correo.com" required /> <!-- L383: Campo de email requerido -->
+    </form> <!-- L384: Fin del formulario -->
+  </div> <!-- L385: Fin del contenedor de vista previa -->
+  <pre><code>&lt;form&gt; <!-- L386: Inicio del código del ejemplo etiquetas 8 (no modificar) -->
+  &lt;label for="email"&gt;Correo&lt;/label&gt;
+  &lt;input id="email" name="email" type="email" placeholder="tu@correo.com" required /&gt;
+&lt;/form&gt;</code></pre> <!-- L389: Fin del código del ejemplo etiquetas 8 -->
+
+  <!-- 9) Botón button --> <!-- L391: Nombre del ejemplo de etiquetas 9 -->
+  <h3>9) Botón (button)</h3> <!-- L392: Subtítulo del ejemplo -->
+  <div> <!-- L393: Contenedor de vista previa -->
+    <button type="button">Clic aquí</button> <!-- L394: Botón sin submit -->
+  </div> <!-- L395: Fin del contenedor de vista previa -->
+  <pre><code>&lt;button type="button"&gt;Clic aquí&lt;/button&gt;</code></pre> <!-- L396: Código del ejemplo etiquetas 9 -->
+
+  <!-- 10) Contenedores div + span --> <!-- L398: Nombre del ejemplo de etiquetas 10 -->
+  <h3>10) Contenedores (div + span)</h3> <!-- L399: Subtítulo del ejemplo -->
+  <div> <!-- L400: Contenedor de vista previa -->
+    <div> <!-- L401: Contenedor genérico (div) -->
+      <h4>Producto <span>$9.99</span></h4> <!-- L402: Título con precio en span -->
+      <p>Descripción breve.</p> <!-- L403: Descripción del producto -->
+    </div> <!-- L404: Fin del contenedor genérico -->
+  </div> <!-- L405: Fin del contenedor de vista previa -->
+  <pre><code>&lt;div class="tarjeta"&gt; <!-- L406: Inicio del código del ejemplo etiquetas 10 (no modificar) -->
+  &lt;h3&gt;Producto &lt;span class="precio"&gt;$9.99&lt;/span&gt;&lt;/h3&gt;
+  &lt;p&gt;Descripción breve.&lt;/p&gt;
+&lt;/div&gt;</code></pre> <!-- L409: Fin del código del ejemplo etiquetas 10 -->
+
+  <!-- Nota final --> <!-- L411: Comentario que marca el cierre de la página -->
+  <hr /> <!-- L412: Separador horizontal -->
+  <p>Fin de los ejemplos. Puedes copiar los fragmentos de código de arriba y usarlos donde los necesites.</p> <!-- L413: Texto final de la página -->
+  </div> <!-- L414: Fin del contenedor principal -->
+  <script> <!-- L415: Inicio del script inline para numerar líneas -->
+    // Numerar líneas en todos los bloques <pre><code>
+    document.addEventListener('DOMContentLoaded', function () { // L417: Espera a que cargue el DOM
+      document.querySelectorAll('pre > code').forEach(function (codeEl) { // L418: Recorre cada bloque de código
+        var pre = codeEl.parentElement; // L419: Referencia al elemento <pre>
+        pre.classList.add('numbered'); // L420: Añade clase para estilos de numeración
+        var text = codeEl.textContent.replace(/\r\n/g, '\n'); // L421: Normaliza saltos de línea
+        var lines = text.split('\n'); // L422: Divide en líneas
+        codeEl.textContent = ''; // L423: Limpia el contenido para reconstruir
+        lines.forEach(function (lineText, idx) { // L424: Itera cada línea
+          var line = document.createElement('span'); // L425: Contenedor de la línea
+          line.className = 'line'; // L426: Clase para grid de número + contenido
+          var num = document.createElement('span'); // L427: Span del número de línea
+          num.className = 'line-number'; // L428: Clase del número
+          num.textContent = String(idx + 1).padStart(2, ' '); // L429: Texto del número con relleno
+          var content = document.createElement('span'); // L430: Span del contenido de la línea
+          content.className = 'line-content'; // L431: Clase del contenido
+          content.textContent = lineText; // L432: Texto original de la línea
+          line.appendChild(num); // L433: Inserta número en la línea
+          line.appendChild(content); // L434: Inserta contenido en la línea
+          codeEl.appendChild(line); // L435: Agrega la línea al bloque de código
+          if (idx < lines.length - 1) { // L436: Si no es la última, agrega salto visual
+            codeEl.appendChild(document.createTextNode('\n')); // L437: Salto de línea entre spans
+          }
+        }); // L439: Fin del recorrido de líneas
+      }); // L440: Fin del recorrido de bloques de código
+    }); // L441: Fin del listener DOMContentLoaded
+  </script> <!-- L442: Fin del script inline -->
+ </body> <!-- L443: Cierre del cuerpo -->
+ </html> <!-- L444: Cierre del documento HTML -->

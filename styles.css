@@ -1,0 +1,97 @@
+/* =========================================================
+   styles.css — Estilos simples y documentados
+   ---------------------------------------------------------
+   Objetivo: presentación limpia, mínima y fácil de entender.
+   Tip: Mantén nombres de clases claros y semánticos.
+   ========================================================= */
+
+/* ========== 1) Variables de color y medidas básicas ========== */
+:root {
+  --bg: #f7f8fa;        /* Fondo general claro */
+  --text: #1f2330;      /* Texto principal oscuro */
+  --muted: #5b6273;     /* Texto secundario */
+  --brand: #2563eb;     /* Color de marca para enlaces y acentos */
+  --border: #e6e9f0;    /* Color de bordes y separadores */
+  --card: #ffffff;      /* Fondo de tarjetas/demos */
+  --radius: 12px;       /* Radio estándar */
+}
+
+/* ========== 2) Reset muy ligero y tipografía ========== */
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+}
+
+/* ========== 3) Layout general ========== */
+.container { width: min(900px, 94%); margin: 0 auto; padding: 24px 0 56px; }
+section { margin: 32px 0; }
+section > h2 { margin: 0 0 6px; font-size: 22px; }
+.section-intro { margin: 0 0 16px; color: var(--muted); }
+
+/* ========== 4) Cabecera y navegación ========== */
+.site-header { background: var(--card); border-bottom: 1px solid var(--border); }
+.site-header .bar { display: flex; align-items: center; justify-content: space-between; gap: 10px; padding: 12px 0; }
+.brand { font-weight: 700; }
+.top-nav { display: flex; flex-wrap: wrap; gap: 8px; }
+.top-nav a { padding: 6px 10px; border: 1px solid var(--border); border-radius: 999px; color: var(--text); text-decoration: none; font-size: 14px; }
+.top-nav a:hover, .top-nav a:focus-visible { border-color: var(--brand); color: var(--brand); outline: none; }
+
+/* ========== 5) Componentes simples ========== */
+.hero { display: grid; gap: 14px; }
+.btn { display: inline-block; padding: 10px 14px; border-radius: 8px; border: 1px solid var(--border); background: var(--card); color: var(--text); text-decoration: none; }
+.btn.primary { background: var(--brand); color: #fff; border-color: var(--brand); }
+
+.demo-card { background: var(--card); border: 1px solid var(--border); border-radius: var(--radius); padding: 14px; margin: 14px 0; }
+.demo-title { display: flex; align-items: center; justify-content: space-between; gap: 10px; margin-bottom: 8px; }
+.demo-title h3 { margin: 0; font-size: 18px; }
+.badge { font-size: 12px; color: var(--muted); border: 1px solid var(--border); padding: 2px 8px; border-radius: 999px; }
+.demo-badges { display: flex; gap: 6px; flex-wrap: wrap; }
+.demo-preview { border: 1px dashed var(--border); border-radius: 8px; padding: 10px; }
+
+/* ========== 6) Código y detalles ========== */
+details.code { margin-top: 10px; }
+details.code summary { cursor: pointer; color: var(--brand); }
+pre { background: #f3f4f6; border: 1px solid var(--border); border-radius: 8px; padding: 10px; overflow: auto; }
+code { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; font-size: 13px; }
+
+/* ========== 6.1) Numeración de líneas en bloques de código ========== */
+pre.numbered { counter-reset: line; }
+pre.numbered code { display: block; }
+pre.numbered code .line {
+  display: grid;
+  grid-template-columns: 3ch 1fr;
+  gap: 10px;
+}
+pre.numbered code .line-number {
+  color: #9aa3b2;
+  text-align: right;
+  user-select: none;
+}
+pre.numbered code .line-content { white-space: pre; }
+
+/* ========== 7) Utilidades de ejemplo ========== */
+.card-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 10px; }
+.card { border: 1px solid var(--border); border-radius: 8px; padding: 10px; background: var(--card); }
+.gallery ul { list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 8px; }
+.gallery img { width: 100%; height: 110px; object-fit: cover; border-radius: 6px; border: 1px solid var(--border); }
+
+/* ========== 8) Tablas y formularios ========== */
+table { width: 100%; border-collapse: collapse; border: 1px solid var(--border); border-radius: 8px; overflow: hidden; }
+thead th { text-align: left; background: #eef2ff; }
+th, td { padding: 8px 10px; border-bottom: 1px solid var(--border); }
+.contact-form label { display: block; margin: 8px 0; }
+.contact-form input, .contact-form textarea, .contact-form select { width: 100%; padding: 8px 10px; border-radius: 8px; border: 1px solid var(--border); background: #fff; color: var(--text); }
+.contact-form input:focus, .contact-form textarea:focus { outline: 2px solid #bfdbfe; border-color: #93c5fd; }
+
+/* ========== 9) Pie de página ========== */
+footer { margin-top: 32px; padding: 16px 0; color: var(--muted); border-top: 1px solid var(--border); }
+
+/* ========== 10) Responsive básico ========== */
+@media (max-width: 680px) {
+  .demo-title { flex-direction: column; align-items: flex-start; }
+}
